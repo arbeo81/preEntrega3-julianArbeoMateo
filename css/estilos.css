@@ -1,0 +1,204 @@
+
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.header{  
+  position: sticky;
+  top: .1rem;
+  z-index: 100;
+}
+
+.darkMode{
+    color: white;
+    background-color: rgb(53, 53, 53);
+}
+.darkMode .card{
+    color: rgb(46, 46, 46);
+}
+.darkMode .card-body{
+    background-color:rgba(128, 128, 128, 0.381) ;
+}
+.darkMode .modal{
+    color: black;
+}
+
+.navbar{
+    background-color: rgba(45, 177, 194, 0.246);
+}
+.btn{
+    background-color:rgb(21, 139, 155) ;
+}
+.btn a:hover{
+    color:rgb(15, 208, 233) !important;
+}
+.btn_modoOscuro{
+    text-align: center;
+    margin: 3rem;
+}
+#fecha{
+    color: rgb(113, 113, 113);
+}
+
+.div_btn_agregar{
+    display: flex;
+    position: absolute;
+    margin-left: 25rem;
+    margin-top: 15rem;
+}
+.div_btn_rentabilidad{
+    display: flex;
+    position: absolute;
+    margin-left: 37rem;
+    margin-top: 15rem; 
+}
+.img_portada{
+    width: 100%;
+    height: 70%;
+}
+
+.form_buscador{
+    display: flex;
+    position:absolute;
+    margin-top:10rem;
+    width: 30%;
+    padding-right: -40rem;
+    margin-left: 25rem;
+}
+
+.modal_rentabilidad{
+    text-align: end;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+
+.h1{
+    margin-top: -9rem;
+    text-align: center;
+}
+
+.cards{
+    margin-top: 2rem;
+}
+
+.card{
+    width: 90%;
+    max-width: 350px;
+    margin: 1rem auto;
+    border: 1px solid rgb(44, 164, 204);
+    text-align: center;
+    background-color: white;
+    max-height: 700px;
+}
+.card h3{
+    color: black;
+    margin: 0.5rem 0rem;
+    padding: 0.25rem;
+    padding-top: 1rem;
+    font-size: 2.25rem;
+    height: 120px;
+
+}
+.card img{
+    min-width: 250px;
+    width: 100%;
+    height: 300px;
+}
+.content{
+    padding: 1rem;
+    font-size: 1rem;
+
+}
+.content a{
+    padding: 0.5rem;
+    text-decoration: none;
+    color: gray;
+    border: 1px black solid;
+    border-radius: 20%;
+    color: white;
+    background-color: black;
+
+    font-size: 1.25rem;
+
+}
+.content p{
+    padding: 0.25rem;
+}
+.content a:hover{
+    color:rgb(28, 205, 224);
+    height: 200%;
+    
+}
+.autorCard{
+    font-size: 2rem;
+    height: 80px;
+}
+.precioCard{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+}
+
+.footer .footer-div-derechos {
+    color: white;
+  }
+  .footer .footer-div-background {
+    background: #757575;
+  }
+  .footer .footer-div-mail {
+    text-decoration: none;
+    color: grey;
+  }
+  .footer .footer-container-row-div {
+    text-align: center;
+  }
+  .footer .footer-container-row-div .footer-container-row-div-redesSociales {
+    text-align: center;
+  }
+  .footer .footer-container-row-div .footer-container-row-col-h5-redesSociales {
+    text-align: center;
+  }
+  .footer .footer-container-row-div .footer-container-row-div-accesos-h5 {
+    text-align: center;
+  }
+  .footer .footer-div-redesSociales {
+    text-align: center;
+  }
+  .footer .footer-div-redesSociales .footer-div-redesSociales-facebook {
+    font-size: 4rem;
+    color: rgba(24, 118, 242, 0.4509803922);
+    transition: transform 0.2s;
+  }
+  .footer .footer-div-redesSociales .footer-div-redesSociales-facebook:hover {
+    transform: scale(1.1);
+    color: #1876f2;
+  }
+  .footer .footer-div-redesSociales .footer-div-redesSociales-instagram {
+    font-size: 4rem;
+    color: rgba(212, 48, 138, 0.4509803922);
+    transition: transform 0.2s;
+  }
+  .footer .footer-div-redesSociales .footer-div-redesSociales-instagram:hover {
+    transform: scale(1.1);
+    color: #D43089;
+  }
+  .footer .footer-div-redesSociales .footer-div-redesSociales-pinterest {
+    font-size: 4rem;
+    color: rgba(255, 0, 0, 0.404);
+    transition: transform 0.2s;
+  }
+  .footer .footer-div-redesSociales .footer-div-redesSociales-pinterest:hover {
+    transform: scale(1.1);
+    color: red;
+  }
+  .footer .footer-div-redesSociales .footer-div-redesSociales-whatsapp {
+    font-size: 4rem;
+    color: rgba(37, 211, 101, 0.431372549);
+    transition: transform 0.2s;
+  }
+  .footer .footer-div-redesSociales .footer-div-redesSociales-whatsapp:hover {
+    transform: scale(1.1);
+    color: #25D366;
+  }
