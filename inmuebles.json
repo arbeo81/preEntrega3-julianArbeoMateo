@@ -1,0 +1,86 @@
+[
+    {
+        "id":1,
+        "precio": 100000,
+        "tipo": "departamento",
+        "operacion": "alquiler",
+        "imagen": "depto_1.jpg"
+    },
+    {
+        "id":2,
+        "precio": 150000,
+        "tipo": "departamento",
+        "operacion": "alquiler",
+        "imagen": "depto_2.jpg"
+    },
+    {
+        "id":3,
+        "precio": 200000,
+        "tipo": "departamento",
+        "operacion": "alquiler",
+        "imagen": "depto_3.jpg"
+    },
+    {
+        "id":4,
+        "precio": 200000,
+        "tipo": "casa",
+        "operacion": "alquiler",
+        "imagen": "casa_1.jpg"
+    },
+    {
+        "id":5,
+        "precio": 250000,
+        "tipo": "casa",
+        "operacion": "alquiler",
+        "imagen": "casa_2.jpg"
+    }, 
+    {
+        "id":6,
+        "precio": 300000,
+        "tipo": "casa",
+        "operacion": "alquiler",
+        "imagen": "casa_3.jpg"
+    }, 
+    {
+        "id":7,
+        "precio": 1000000,
+        "tipo": "departamento",
+        "operacion": "venta",
+        "imagen": "depto_4.jpg"
+    },
+    {
+        "id":8,
+        "precio": 1500000,
+        "tipo": "departamento",
+        "operacion": "venta",
+        "imagen": "depto_5.jpg"
+    },
+    {
+        "id":9,
+        "precio": 2000000,
+        "tipo": "departamento",
+        "operacion": "venta",
+        "imagen": "depto_6.jpg"
+    },
+    {
+        "id":10,
+        "precio": 2000000,
+        "tipo": "casa",
+        "operacion": "venta",
+        "imagen": "casa_4.jpg"
+    },
+    {
+        "id":11,
+        "precio": 2500000,
+        "tipo": "casa",
+        "operacion": "venta",
+        "imagen": "casa_6.jpg"
+    },
+    {
+        "id":12,
+        "precio": 3000000,
+        "tipo": "casa",
+        "operacion": "venta",
+        "imagen": "casa_6.jpg"
+    }
+]

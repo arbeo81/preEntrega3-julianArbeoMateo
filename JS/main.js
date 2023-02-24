@@ -106,7 +106,7 @@ function cargarInmueble(array){
         let inputTipo = document.getElementById("tipoInput")
         let inputOperacion = document.getElementById("operacionInput")
         let inputPrecio = document.getElementById("precioInput")
-        const inmuebleNuevo = new inmueble(array.length+1,parseInt(inputPrecio.value), inputTipo.value, inputOperacion.value, "inmuebleNuevo.jpg")
+        const inmuebleNuevo = new Inmueble(array.length+1,parseInt(inputPrecio.value), inputTipo.value, inputOperacion.value, "inmuebleNuevo.jpg")
         console.log(inmuebleNuevo)
         array.push(inmuebleNuevo)
         console.log(array)
@@ -134,6 +134,47 @@ function cargarInmueble(array){
                 return 0;
         }
     }
+
+    function finalizarCompra(array){
+        Swal.fire({
+            title: 'Está seguro de realizar la compra',
+            icon: 'info',
+            showCancelButton: true,
+            confirmButtonText: 'Sí, seguro',
+            cancelButtonText: 'No, no quiero',
+            confirmButtonColor: 'green',
+            cancelButtonColor: 'red',
+        }).then((result)=>{
+            if(result.isConfirmed){
+                //alert es a nivel DOM
+                let finalizarTotal = calcularTotal(array)
+                console.log(finalizarTotal)
+                Swal.fire({
+                    title: 'Compra realizada',
+                    icon: 'success',
+                    confirmButtonColor: 'green',
+                    text: `Muchas gracias por su compra ha adquirido nuestros productos el día ${fechaHoy.toLocaleString(DateTime.DATE_MED_WITH_WEEKDAY)} a las ${fechaHoy.toLocaleString(DateTime.TIME_SIMPLE)}. El total de su compra es ${finalizarTotal}`,
+                    })
+                    //nivel arrays
+                    productosEnCarrito = []
+                    localStorage.removeItem("carrito")
+                    
+            }else{
+                Swal.fire({
+                    title: 'Compra no realizada',
+                    icon: 'info',
+                    text: `La compra no ha sido realizada! Atención sus productos siguen en el carrito :D`,
+                    confirmButtonColor: 'green',
+                    timer:3500
+                })
+            }
+        })
+    }
+
+
+
+
+
     function rentabilidad(){
         let tipoDePropiedad = document.getElementById("tipoPropiedad")
         let ingresoMensual = document.getElementById ("ingresoMensual")
@@ -205,6 +246,8 @@ function buscarInfo(buscado, array){
     :
     (coincidencia.innerHTML = "", mostrarInmuebles(busquedaArray))
 }
+
+
 guardaInmuebleBtn.addEventListener("click", ()=>{
         cargarInmueble(inmobiliaria)}
     )
@@ -230,3 +273,4 @@ botonFavorito.addEventListener("click", () =>{
     cargarProductosFavorito(productosEnFavorito)
 })
 mostrarInmuebles(inmobiliaria)
+
